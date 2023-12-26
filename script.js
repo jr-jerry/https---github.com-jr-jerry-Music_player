@@ -15,17 +15,20 @@ function startRotation() {
 }
 
 btn.addEventListener("click", () => {
-  if (btn.value === "play") {
+  if (btn.value == "play") {
     audio.play();
     Id = setInterval(() => {
       startRotation();
       rotation_count += 1;
     }, 100);
     btn.value = "pause";
+    btn.innerHTML='<i class="fa-solid fa-pause"></i>';
+
   } else {
     audio.pause();
     stopRotation();
     clearInterval(Id);
+   btn.innerHTML='<i class="fa-solid fa-play"></i>';
     btn.value = "play";
   }
 });
