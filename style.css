@@ -23,9 +23,9 @@
   /* display:flex; */
   /* flex-wrap:wrap; */
   width:220px;
-  height:340px;
+  height:350px;
   background-color:#89c8c8;
-  border:1px solid #89c8c8;;
+  border:1px solid #89c8c8;
   box-shadow:10px -2px 5px #263131;
 }
 .music_player nav{
